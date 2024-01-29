@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+        LimeGreen: "hsl(163, 72%, 41%)",
+        BrightRed:" hsl(356, 69%, 56%)",
+
+        Facebook: "hsl(208, 92%, 53%)",
+        Twitter: "hsl(203, 89%, 53%)",
+        InstagramFirst: "hsl(37, 97%, 70%)",
+        InstagramFirst: "hsl(329, 70%, 58%)",
+        YouTube: "hsl(348, 97%, 39%)",
+
+        ToggleFirst: "hsl(210, 78%, 56%)",
+       ToggleSecond: " hsl(146, 68%, 55%)",
+        //  Light Theme
+
+        ToggleLight: "hsl(230, 22%, 74%)",
+
+
+
+        //  Dark Theme
+
+        VeryDarkBlue: "hsl(230, 17%, 14%)",
+        VeryDarkBlue: "hsl(232, 19%, 15%)",
+        DarkDesaturatedBlue: "hsl(228, 28%, 20%)",
+        DesaturatedBlueText: "hsl(228, 34%, 66%)",
+        WhiteText:"hsl(0, 0%, 100%)",
+
+        // Light Theme
+
+        WhiteBg :" hsl(0, 0%, 100%)",
+    VeryPaleBlue: "hsl(225, 100%, 98%)",
+    LightGrayishBlue: "hsl(227, 47%, 96%)",
+    DarkGrayishBlue: "hsl(228, 12%, 44%)",
+    VeryDarkBlue: "hsl(230, 17%, 14%)",
+          }
+        }
+      }
+    }
+  </script>
+   <link rel="icon" type="image/png" sizes="32x32" href="./social-media-dashboard-with-theme-switcher-master/images/favicon-32x32.png">
+  
+   <title>Frontend Mentor | Social-Media Dashboard</title>
+</head>
+<body class="min-h-screen">
+  <div class="px-[100px] py-[50px] max-[1100px]:px-[20px]">
+    <div class="flex justify-between max-[850px]:block">
+        <div>
+            <h1 class="text-WhiteText text-[35px] font-[600] dark-text title max-[500px]:text-[25px]">Social Media Dashboard</h1>
+            <p class="text-DesaturatedBlueText font-[500]">Total Followers: 23,004</p>
+        </div>
+        <div class="flex gap-[20px] mt-[20px] max-[850px]:justify-between max-[850px]:bg-VeryDarkBlue max-[850px]:p-[10px]">
+            <p class="text-DesaturatedBlueText font-[500] pt-[5px]">Dark Mode</p>
+            <div class="toggle-switch">
+              <input type="checkbox" id="toggle" class="checkbox">
+              <label for="toggle" class="label"></label>
+            </div>
+        </div>
+    </div>
+    <div class="py-[50px] flex justify-between max-[1100px]:flex-col">
+      <div class="px-[60px] py-[40px] text-center justify-center items-center flex flex-col bg-DarkDesaturatedBlue rounded-[10px]
+      border-t-8 border-Facebook w-[24%] light-bg max-[1100px]:w-[100%] max-[1100px]:my-[20px] ">
+        <div class="flex gap-[10px]">
+          <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-facebook.svg" alt="" class="w-[30px]">
+          <p class="text-DesaturatedBlueText font-[600] pt-[3px]">@nathanf</p>
+        </div>
+        <h1 class="text-[60px] text-WhiteText font-[600] pt-[10px] dark-text">1987</h1>
+        <p class="tracking-[5px] uppercase text-DesaturatedBlueText">followers</p>
+        <div class="block pt-[20px]">
+          <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="" class="inline-block">
+          <p class="inline-block text-LimeGreen font-[600]">12 Today</p>
+        </div>
+      </div>
+
+      <div class="px-[60px] py-[40px] text-center justify-center items-center flex flex-col bg-DarkDesaturatedBlue rounded-[10px]
+      border-t-8 border-Twitter w-[24%] light-bg max-[1100px]:w-[100%] max-[1100px]:my-[20px]">
+        <div class="flex gap-[10px]">
+          <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-twitter.svg" alt="" class="w-[30px]">
+          <p class="text-DesaturatedBlueText font-[600] pt-[3px]">@nathanf</p>
+        </div>
+        <h1 class="text-[60px] text-WhiteText font-[600] pt-[10px] dark-text">1044</h1>
+        <p class="tracking-[5px] uppercase text-DesaturatedBlueText">followers</p>
+        <div class="block pt-[20px]">
+          <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="" class="inline-block">
+          <p class="inline-block text-LimeGreen font-[600]">99 Today</p>
+        </div>
+      </div>
+
+      <div class="px-[60px] py-[40px] text-center justify-center items-center flex flex-col bg-DarkDesaturatedBlue rounded-[10px]
+      gradient-border-top w-[24%] light-bg max-[1100px]:w-[100%] max-[1100px]:my-[20px]">
+        <div class="flex gap-[10px]">
+          <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-instagram.svg" alt="" class="w-[30px]">
+          <p class="text-DesaturatedBlueText font-[600] pt-[3px]">@realnathanf</p>
+        </div>
+        <h1 class="text-[60px] text-WhiteText font-[600] pt-[10px] dark-text">11k</h1>
+        <p class="tracking-[5px] uppercase text-DesaturatedBlueText">followers</p>
+        <div class="block pt-[20px]">
+          <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="" class="inline-block">
+          <p class="inline-block text-LimeGreen font-[600]">99 Today</p>
+        </div>
+      </div>
+
+      <div class="px-[60px] py-[40px] text-center justify-center items-center flex flex-col bg-DarkDesaturatedBlue rounded-[10px]
+      border-t-8 border-YouTube w-[24%] light-bg max-[1100px]:w-[100%] max-[1100px]:my-[20px]">
+        <div class="flex gap-[10px]">
+          <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-youtube.svg" alt="" class="w-[30px]">
+          <p class="text-DesaturatedBlueText font-[600] pt-[3px]">Nathan F.</p>
+        </div>
+        <h1 class="text-[60px] text-WhiteText font-[600] pt-[10px] dark-text">8239</h1>
+        <p class="tracking-[5px] uppercase text-DesaturatedBlueText">Subscribers</p>
+        <div class="block pt-[20px]">
+          <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-down.svg" alt="" class="inline-block">
+          <p class="inline-block text-BrightRed font-[600]">144 Today</p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <h1 class="text-WhiteText font-[600] text-[30px] dark-text title max-[500px]:text-[25px]"> Overview - Today</h1>
+    <div class="flex flex-col">
+      <div class="flex justify-between py-[20px] max-[1100px]:flex-col">
+
+        <div class="p-[20px] bg-DarkDesaturatedBlue rounded-[10px] w-[24%] light-bg max-[1100px]:w-[100%] max-[1100px]:my-[20px]">
+          <div class="justify-between flex pb-[10px]">
+            <p class="text-DesaturatedBlueText ">Page Views</p>
+            <img class="h-[20px]" src="./social-media-dashboard-with-theme-switcher-master/images/icon-facebook.svg" alt="">
+          </div>
+          <div class="flex justify-between">
+            <h2 class="text-WhiteText text-[30px] font-[600] dark-text">87</h2>
+            <div class="block  mt-[15px]">
+              <img class="inline-block" src="./social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="">
+              <p class="inline-block text-LimeGreen">3%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-[20px] bg-DarkDesaturatedBlue rounded-[10px] w-[24%] light-bg max-[1100px]:w-[100%] max-[1100px]:my-[20px]">
+          <div class="justify-between flex pb-[10px]">
+            <p class="text-DesaturatedBlueText ">Likes</p>
+            <img class="h-[20px]" src="./social-media-dashboard-with-theme-switcher-master/images/icon-facebook.svg" alt="">
+          </div>
+          <div class="flex justify-between">
+            <h2 class="text-WhiteText text-[30px] font-[600] dark-text">52</h2>
+            <div class="block  mt-[15px]">
+              <img class="inline-block" src="./social-media-dashboard-with-theme-switcher-master/images/icon-down.svg" alt="">
+              <p class="inline-block text-BrightRed">2%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-[20px] bg-DarkDesaturatedBlue rounded-[10px] w-[24%] light-bg max-[1100px]:w-[100%] max-[1100px]:my-[20px]">
+          <div class="justify-between flex pb-[10px]">
+            <p class="text-DesaturatedBlueText ">Likes</p>
+            <img class="h-[20px]" src="./social-media-dashboard-with-theme-switcher-master/images/icon-instagram.svg" alt="">
+          </div>
+          <div class="flex justify-between">
+            <h2 class="text-WhiteText text-[30px] font-[600] dark-text">5462</h2>
+            <div class="block  mt-[15px]">
+              <img class="inline-block" src="./social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="">
+              <p class="inline-block text-LimeGreen">2257%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-[20px] bg-DarkDesaturatedBlue rounded-[10px] w-[24%] light-bg max-[1100px]:w-[100%] max-[1100px]:mt-[20px]">
+          <div class="justify-between flex pb-[10px]">
+            <p class="text-DesaturatedBlueText ">Profile Views</p>
+            <img class="h-[20px]" src="./social-media-dashboard-with-theme-switcher-master/images/icon-instagram.svg" alt="">
+          </div>
+          <div class="flex justify-between">
+            <h2 class="text-WhiteText text-[30px] font-[600] dark-text">52k</h2>
+            <div class="block  mt-[15px]">
+              <img class="inline-block" src="./social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="">
+              <p class="inline-block text-LimeGreen">1375%</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="flex justify-between py-[20px] max-[1100px]:flex-col">
+
+        <div class="p-[20px] bg-DarkDesaturatedBlue rounded-[10px] w-[24%] light-bg max-[1100px]:w-[100%] max-[1100px]:mb-[20px]">
+          <div class="justify-between flex pb-[10px]">
+            <p class="text-DesaturatedBlueText ">Retweets</p>
+            <img class="h-[20px]" src="./social-media-dashboard-with-theme-switcher-master/images/icon-twitter.svg" alt="">
+          </div>
+          <div class="flex justify-between">
+            <h2 class="text-WhiteText text-[30px] font-[600] dark-text">117</h2>
+            <div class="block  mt-[15px]">
+              <img class="inline-block" src="./social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="">
+              <p class="inline-block text-LimeGreen">303%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-[20px] bg-DarkDesaturatedBlue rounded-[10px] w-[24%] light-bg max-[1100px]:w-[100%] max-[1100px]:my-[20px]">
+          <div class="justify-between flex pb-[10px]">
+            <p class="text-DesaturatedBlueText ">Likes</p>
+            <img class="h-[20px]" src="./social-media-dashboard-with-theme-switcher-master/images/icon-twitter.svg" alt="">
+          </div>
+          <div class="flex justify-between">
+            <h2 class="text-WhiteText text-[30px] font-[600] dark-text">507</h2>
+            <div class="block  mt-[15px]">
+              <img class="inline-block" src="./social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="">
+              <p class="inline-block text-LimeGreen">553%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-[20px] bg-DarkDesaturatedBlue rounded-[10px] w-[24%] light-bg max-[1100px]:w-[100%] max-[1100px]:my-[20px]">
+          <div class="justify-between flex pb-[10px]">
+            <p class="text-DesaturatedBlueText ">Likes</p>
+            <img class="h-[20px]" src="./social-media-dashboard-with-theme-switcher-master/images/icon-youtube.svg" alt="">
+          </div>
+          <div class="flex justify-between">
+            <h2 class="text-WhiteText text-[30px] font-[600] dark-text">107</h2>
+            <div class="block  mt-[15px]">
+              <img class="inline-block" src="./social-media-dashboard-with-theme-switcher-master/images/icon-down.svg" alt="">
+              <p class="inline-block text-BrightRed">19%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-[20px] bg-DarkDesaturatedBlue rounded-[10px] w-[24%] light-bg max-[1100px]:w-[100%] max-[1100px]:my-[20px]">
+          <div class="justify-between flex pb-[10px]">
+            <p class="text-DesaturatedBlueText ">Total Views</p>
+            <img class="h-[20px]" src="./social-media-dashboard-with-theme-switcher-master/images/icon-youtube.svg" alt="">
+          </div>
+          <div class="flex justify-between">
+            <h2 class="text-WhiteText text-[30px] font-[600] dark-text">1407</h2>
+            <div class="block  mt-[15px]">
+              <img class="inline-block" src="./social-media-dashboard-with-theme-switcher-master/images/icon-down.svg" alt="">
+              <p class="inline-block text-BrightRed">12%</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
